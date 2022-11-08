@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn | SignIn</title>
+    <link rel="stylesheet" href="css/signIn-logIn.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="createContainer">
+        <form class="form" action="">
+            <h3>CREATE YOUR ACCOUNT</h3>
+            <input type="text" placeholder="User Name" id="userCreate" required>
+            <br>
+            <span id="userMessage"></span>
+            <br>
+            <input type="email" name="emailaddress" id="emailaddresssignIn" required placeholder="Email Address">
+            <br>
+            <span></span>
+            <br>
+            <input type="number" name="phonenumber" id="phonenumbersignIn" required placeholder="Phone Number">
+            <br>
+            <span></span>
+            <br>
+            <input type="password" placeholder="Password" id="passCreate" required>
+            <br>
+            <span id="passMessage"></span>
+            <br>
+            <input type="password" placeholder="Confirm Password" id="passCreateConfirm" required>
+            <br>
+            <span id="passConfirmMessage"></span>
+            <br>
+            <span>By creating an account, you agree to ours<a href="#"> Conditions of Use</a> and <a href="#">Privacy
+                    Notice</a>.</span>
+            <div class="loginform-buttons">
+                <button id="create">Create Acc</button>
+                <button id="login">Login</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="loginContainer">
+        <form class="loginform">
+            <h3>LOGIN TO YOUR ACCOUNT</h3>
+            <input type="text" placeholder="User Name" id="userLogin">
+            <br>
+            <span id="UserNameSpan"></span>
+            <br>
+            <input type="password" placeholder="Password" id="PassLogin">
+            <br>
+            <span id="PasswordSpan"></span>
+            <br>
+            <label id="remember-me-label"><input type="checkbox" name="remember" id="remember-me-checkbox"> Remember
+                me!</label>
+            <br>
+            <div class="loginform-buttons">
+                <button id="loginLog">Login</button>
+                <button id="createAcc">Create Acc</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="go-home-page"></div>
+
+    <script type="module" src="js/signIn-logIn.js"></script>
+</body>
+
+</html>

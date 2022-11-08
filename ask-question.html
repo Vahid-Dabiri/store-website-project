@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="stylesheet" href="css/ask-question.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>ask question</title>
+</head>
+
+<body>
+
+    <div class="page-content" id="category-page-content">
+        <div class="go-home-page"></div>
+
+        <!-- ---------------------- question form ------------------ -->
+        <main>
+            <form id="q-form">
+                <h1>ASK YOUR QUESTION</h1>
+                <div id="contact-info">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <select id="departments">
+                        <option value="choose department">Choose your department</option>
+                    </select>
+                </div>
+                <textarea rows="10" cols="70" placeholder="Write your question ..."></textarea>
+                <input type="submit" value="Send" id="submit-btn">
+            </form>
+            <h2 class="most-asked">Most asked questions</h2>
+            <div id="most-asked">
+                
+            </div>
+        </main>
+
+        <!-- ---------------------- footer part -------------------- -->
+        <footer id="footer-template"></footer>
+
+    </div>
+
+    <!-- -------------------------- go up button ------------------- -->
+    <div id="go-up">
+        <button id="go-up-button" title="Go up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+    </div>
+
+    <script type="module" src="js/ask-question.js"></script>
+    <script type="module" src="js/footer-script.js"></script>
+</body>
+
+</html>

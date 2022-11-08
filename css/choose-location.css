@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.go-home-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: rgba(0, 255, 0, 0.5);
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.go-home-page a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.go-home-page:hover a{
+    background-color: black;
+    color: white;
+}
+
+#go-up{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(173, 0, 253, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: -20%;
+    right: 5px;
+    transition: 0.5s;
+}
+
+#go-up-button{
+    background: transparent;
+    font-size: 3vw;
+    border: 0;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#location-page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#more-address{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    background: linear-gradient(45deg, white, darkgray);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#country-name,
+#city-name{
+    font-size: 20px;
+    color: blue;
+    background-color: darkgray;
+    border: 0;
+    outline: none;
+    height: 55px;
+}
+
+#city-name{
+    color: aqua;
+}
+
+option:nth-child(odd){
+    background-color: gray;
+}
+
+#town-location{
+    margin: 10px;
+
+}
+
+#postal-code,
+#phone-number-add{
+    color: brown;
+    height: 55px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: palegoldenrod;
+    margin: 10px;
+    border: none;
+    outline: none;
+}
+
+#phone-number-add{
+    color: darkviolet;
+}
+
+#save-address-btn{
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: lime;
+    box-shadow: 20px 20px 20px grey;
+    transition: 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#save-address-btn:hover{
+    background-color: black;
+    color: lime;
+    transition: 0.5s;
+    box-shadow: none;
+}
+
+#address-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#address-setting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saved-address{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 10px;
+    border: 1px solid blue;
+    margin: 10px;
+    background: linear-gradient(45deg, gray, transparent);
+}
+
+.edit-btn,
+.remove-btn,
+.check-btn{
+    font-size: 40px;
+    border: 0;
+    background: none;
+    color: green;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+.edit-btn:hover,
+.remove-btn:hover,
+.check-btn:hover{
+    box-shadow: 20px 20px 20px grey;
+    transition: 0.5s;
+}
+
+.check-btn{
+    color: black;
+}
+
+.remove-btn{
+    color: red;
+}
+
+.address-info{
+    font-size: 20px;
+}
+
+.country-saved,
+.city-saved,
+.postal-code-saved,
+.phone-number-saved,
+.more-info-saved{
+    color: blue;
+    padding: 5px;
+    display: block;
+}
+
+.more-info-saved{
+    color: black;
+}
+
+.city-saved{
+    color: aqua;
+}
+.postal-code-saved{
+    color: brown;
+}
+.phone-number-saved{
+    color: darkviolet;
+}
+
+.address-setting{
+    display: flex;
+}
+
+#footer-template{
+    margin-top: 0;
+    width: 100%;
+    max-width: 2000px;
+}

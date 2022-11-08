@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="stylesheet" href="css/choose-location.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>choose location</title>
+</head>
+
+<body>
+
+    <div class="page-content" id="location-page-content">
+        <div class="go-home-page"></div>
+
+        <!-- ---------------------- question form ------------------ -->
+        <main>
+            <div id="form-container">
+                <form action="">
+                    <h1>Choose your address</h1>
+                    <div id="town-location">
+                        <select class="changing-values" name="" id="country-name">
+                            <option class="country-option" value="choose-country">Choose your country</option>
+
+                        </select>
+                        <select class="changing-values" name="" id="city-name">
+                            <option class="choose-city" value="choose-city">Choose your city</option>
+
+                        </select>
+                    </div>
+                    <input class="changing-values" type="phone" name="" id="postal-code" placeholder="Postal Code"
+                        required>
+                    <input class="changing-values" type="phone" name="" id="phone-number-add" placeholder="Phone number"
+                        required>
+                    <textarea id="more-address" rows="5" cols="40" placeholder="more information ..."></textarea>
+                    <div id="save-address-btn">Save new address</div>
+                </form>
+            </div>
+
+            <div id = "address-container"></div>
+
+        </main>
+
+        <!-- ---------------------- footer part -------------------- -->
+        <footer id="footer-template"></footer>
+
+    </div>
+
+    <!-- -------------------------- go up button ------------------- -->
+    <div id="go-up">
+        <button id="go-up-button" title="Go up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+    </div>
+
+    <script type="module" src="js/footer-script.js"></script>
+    <script type="module" src="js/choose-location.js"></script>
+</body>
+
+</html>

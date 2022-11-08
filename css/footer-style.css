@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+#footer-container{
+    width: 100%;
+    /* max-width: 1400px; */
+    background-color: gray;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-footer{
+    width: 80%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0 0 8px 0;
+    border-style: solid;
+    border-image: linear-gradient(to right, white, black);
+    border-image-slice: 1;
+}
+
+#login-footer a{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px white;
+}
+
+#login-footer a:hover{
+    color: gray;
+    background-color: white;
+}
+
+#footer-content{
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 2px solid rgb(158, 158, 158);
+    padding-bottom: 10px;
+}
+
+#social-media-footer{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contacts-footer{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    padding-bottom: 20px;
+    border-width: 0 0 8px 0;
+    border-style: solid;
+    border-image: linear-gradient(to right, lime, lightseagreen,yellow);
+    border-image-slice: 1;
+}
+
+.contact-container{
+    text-align: center;
+}
+
+
+@keyframes b-beat {
+    0%{box-shadow: 0 0 5px rgb(0, 81, 255);}
+    100%{box-shadow: 0 0 25px rgb(0, 81, 255);}
+}
+@keyframes r-beat {
+    0%{box-shadow: 0 0 5px red;}
+    100%{box-shadow: 0 0 25px red;}
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+#footer-phone img,
+#footer-email img,
+#footer-location img{
+    animation: shake 1s infinite;
+}
+
+#footer-phone img:hover,
+#footer-email img:hover,
+#footer-location img:hover{
+    animation: none;
+}
+
+#email-address,
+#phone-number,
+#location-address{
+    font-size: 2vw;
+    font-weight: bold;
+    color: yellowgreen;
+}
+#phone-number{
+    color: lightseagreen;
+}
+#location-address{
+    color: yellow;
+}
+#email-address:hover{
+    border-bottom: 1px solid yellowgreen;
+}
+#location-address:hover{
+    border-bottom: 1px solid yellow;
+}
+
+#phone-number:hover{
+    border-bottom: 1px solid lightseagreen;
+}
+
+#footer-instagram,
+#footer-facebook{
+    padding: 15px;
+}
+
+#footer-facebook img{
+    animation: b-beat 1s infinite;
+    border-radius: 13px;
+}
+
+#footer-instagram img{
+    animation: r-beat 1s infinite;
+    border-radius: 13px;
+}
+
+#footer-instagram img:hover,
+#footer-facebook img:hover{
+    animation: none;
+}
+
+#information-footer{
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 30px;
+}
+
+#usefull-list-footer,
+#footer-categories{
+    padding: 15px 15px;
+    line-height: 1.5em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.list-footer{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.head-list-footer{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 15px;
+    grid-column: 1/span 2;
+}
+
+.socials-footer{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.footer-links:hover{
+    border-bottom:1px solid white ;
+}
+
+#copy-right{
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    color: white;
+}
+
+#copy-right p{
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* ////////////////////////////// responsive //////////////////////////// */
+
+@media only screen and (max-width: 600px){
+    #information-footer{
+        grid-auto-flow: row;
+    }
+
+    #email-address, 
+    #phone-number, 
+    #location-address {
+        font-size: 5vw;
+    }
+    #contacts-footer {
+        grid-auto-flow: row;
+    }
+}
